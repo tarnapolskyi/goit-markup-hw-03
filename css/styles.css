@@ -6,7 +6,7 @@
   --secondary-bg-color: #f5f4fa;
   --addition-bg-color: #2f303a;
   --reverse-text-color: #ffffff;
-  --card-set-gap: 20px;
+  --card-set-gap: 30px;
 }
 body {
   font-family: Roboto, sans-serif;
@@ -283,8 +283,12 @@ footer {
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-right: calc(-1 * var(--card-set-gap));
+  /*   margin: -15px; */
 }
 .card-item {
+  /*   width: 370px;
+  width: calc((100-60px) / 3);
+  margin: 15px; */
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-top: var(--card-set-gap);
   margin-right: var(--card-set-gap);
