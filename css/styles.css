@@ -6,6 +6,7 @@
   --secondary-bg-color: #f5f4fa;
   --addition-bg-color: #2f303a;
   --reverse-text-color: #ffffff;
+  --card-set-gap: 20px;
 }
 body {
   font-family: Roboto, sans-serif;
@@ -15,15 +16,47 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
 }
+
 /*======= Стили для сброса ====== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
 }
+
 /*==Стили для всех секций==*/
+
+.container {
+  outline: 1px solid darkblue;
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -32,7 +65,17 @@ body {
 }
 
 /*======= Стили для index.html =======*/
+
 /*=====Шапка сайта=====*/
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -43,7 +86,17 @@ body {
 .logo-badge {
   color: #000000;
 }
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav-list:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -55,6 +108,13 @@ body {
 .current {
   color: var(--accent-color);
 }
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts-list:not(:last-child) {
+  margin-right: 50px;
+}
 .contacts-link {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -64,8 +124,16 @@ body {
 .contacts-link:focus {
   color: var(--accent-color);
 }
+
 /*=====Герой=====*/
+
+.hero {
+  background-color: var(--addition-bg-color);
+}
 .hero-title {
+  width: 696px;
+  margin: 0 auto;
+  padding-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -73,9 +141,11 @@ body {
   color: var(--reverse-text-color);
   text-transform: uppercase;
   text-align: center;
-  background-color: var(--addition-bg-color);
 }
 .hero-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -88,23 +158,53 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
+
 /*=====O нас=====*/
-.about-title {
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+.about .about-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   color: var(--primary-text-color);
   text-transform: uppercase;
 }
 .about-text {
+  width: 270px;
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
+
 /*=====Чем мы занимаемся=====*/
+
+.production-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*=====Наша команда=====*/
+
 .team-section {
   background-color: var(--secondary-bg-color);
 }
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+.team-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-information {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-member {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -113,18 +213,30 @@ body {
 }
 .team-role {
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   color: var(--secondary-text-color);
   text-align: center;
 }
+
 /*=====Футер======*/
+
 footer {
   background-color: var(--addition-bg-color);
+}
+.footer-contacts {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-badge-reverse {
   color: var(--reverse-text-color);
 }
 .address {
+  padding-top: 20px;
+}
+.address-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-link {
   font-style: normal;
   line-height: 1.71;
   color: var(--reverse-text-color);
@@ -137,8 +249,16 @@ footer {
 .feedback:focus {
   color: var(--accent-color);
 }
+
 /* Стили для portfolio.html */
+
+.sorting {
+  display: flex;
+  justify-content: center;
+}
 .sorting-button {
+  padding: 6px 22px;
+  margin-bottom: 50px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -148,12 +268,30 @@ footer {
   border-radius: 4px;
   cursor: pointer;
 }
+.sorting-list:not(:last-child) {
+  margin-right: 8px;
+}
 .sorting-button:hover,
 .sorting-button:focus {
   color: var(--reverse-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-right: calc(-1 * var(--card-set-gap));
+}
+.card-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-top: var(--card-set-gap);
+  margin-right: var(--card-set-gap);
+}
+.card-content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 .card-title {
   font-weight: 700;

@@ -23,6 +23,11 @@ body {
   text-decoration: none;
 }
 /*==Стили для всех секций==*/
+.container {
+  /*   width: 1200px; */
+  outline: 5px solid blue;
+  background-color: chartreuse;
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -32,7 +37,7 @@ body {
 }
 
 /*======= Стили для index.html =======*/
-/*=====Шапка сайта=====*/
+/*===== Шапка сайта =====*/
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -64,7 +69,7 @@ body {
 .contacts-link:focus {
   color: var(--accent-color);
 }
-/*=====Герой=====*/
+/*===== Герой =====*/
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -88,7 +93,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-/*=====O нас=====*/
+/*===== O нас =====*/
 .about-title {
   font-weight: 700;
   font-size: 14px;
@@ -99,8 +104,8 @@ body {
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
-/*=====Чем мы занимаемся=====*/
-/*=====Наша команда=====*/
+/*===== Чем мы занимаемся =====*/
+/*===== Наша команда =====*/
 .team-section {
   background-color: var(--secondary-bg-color);
 }
@@ -117,7 +122,7 @@ body {
   color: var(--secondary-text-color);
   text-align: center;
 }
-/*=====Футер======*/
+/*===== Футер ======*/
 footer {
   background-color: var(--addition-bg-color);
 }
@@ -137,7 +142,7 @@ footer {
 .feedback:focus {
   color: var(--accent-color);
 }
-/* Стили для portfolio.html */
+/*===== Стили для portfolio.html =====*/
 .sorting-button {
   font-weight: 500;
   font-size: 16px;
