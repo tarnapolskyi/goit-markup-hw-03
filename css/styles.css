@@ -6,7 +6,6 @@
   --secondary-bg-color: #f5f4fa;
   --addition-bg-color: #2f303a;
   --reverse-text-color: #ffffff;
-  --card-set-gap: 30px;
 }
 body {
   font-family: Roboto, sans-serif;
@@ -45,7 +44,6 @@ img {
 /*==Стили для всех секций==*/
 
 .container {
-  outline: 1px solid darkblue;
   width: 1230px;
   padding-right: 15px;
   padding-left: 15px;
@@ -71,6 +69,7 @@ img {
 .header {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 .header-nav {
   display: flex;
@@ -281,19 +280,17 @@ footer {
 .card {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-right: calc(-1 * var(--card-set-gap));
-  /*   margin: -15px; */
+  margin-top: -15px;
+  margin-left: -15px;
 }
 .card-item {
-  /*   width: 370px;
-  width: calc((100-60px) / 3);
-  margin: 15px; */
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-top: var(--card-set-gap);
-  margin-right: var(--card-set-gap);
+  flex-basis: calc((100% - 60px) / 3);
+  width: 370px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 .card-content {
+  width: 370px;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
