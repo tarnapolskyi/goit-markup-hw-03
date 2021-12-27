@@ -32,19 +32,19 @@ img {
   max-width: 100%;
   height: auto;
 }
-.list {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.link {
+a {
   text-decoration: none;
 }
 
 /*==Стили для всех секций==*/
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -65,11 +65,12 @@ img {
 /*======= Стили для index.html =======*/
 
 /*=====Шапка сайта=====*/
-
 .header {
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .header-nav {
   display: flex;
@@ -89,7 +90,7 @@ img {
   display: flex;
   margin-left: 93px;
 }
-.site-nav-list:not(:last-child) {
+.site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
 .site-nav-link {
@@ -111,7 +112,7 @@ img {
   display: flex;
   margin-left: auto;
 }
-.contacts-list:not(:last-child) {
+.contacts-item:not(:last-child) {
   margin-right: 50px;
 }
 .contacts-link {
@@ -127,12 +128,13 @@ img {
 /*=====Герой=====*/
 
 .hero {
+  padding: 200px 0;
   background-color: var(--addition-bg-color);
 }
 .hero-title {
   width: 696px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -162,7 +164,9 @@ img {
 
 .about {
   display: flex;
-  justify-content: space-between;
+}
+.about-list:not(:last-child) {
+  margin-right: 30px;
 }
 .about .about-title {
   margin-bottom: 10px;
@@ -178,10 +182,14 @@ img {
 }
 
 /*=====Чем мы занимаемся=====*/
-
+.section-prodaction {
+  padding-top: 0;
+}
 .production-list {
   display: flex;
-  justify-content: space-between;
+}
+.production-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*=====Наша команда=====*/
@@ -191,12 +199,14 @@ img {
 }
 .team {
   display: flex;
-  justify-content: space-between;
 }
 .team-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-card:not(:last-child) {
+  margin-right: 30px;
 }
 .team-information {
   padding-top: 30px;
@@ -222,21 +232,22 @@ img {
 footer {
   background-color: var(--addition-bg-color);
 }
-.footer-contacts {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .logo-badge-reverse {
   color: var(--reverse-text-color);
 }
 .address {
-  padding-top: 20px;
+  margin-top: 20px;
+  font-style: normal;
 }
-.address-list:not(:last-child) {
+.address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .address-link {
-  font-style: normal;
   line-height: 1.71;
   color: var(--reverse-text-color);
 }
@@ -254,10 +265,11 @@ footer {
 .sorting {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .sorting-button {
   padding: 6px 22px;
-  margin-bottom: 50px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -267,7 +279,7 @@ footer {
   border-radius: 4px;
   cursor: pointer;
 }
-.sorting-list:not(:last-child) {
+.sorting-item:not(:last-child) {
   margin-right: 8px;
 }
 .sorting-button:hover,
@@ -280,19 +292,20 @@ footer {
 .card {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -15px;
-  margin-left: -15px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .card-item {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 90px) / 3);
   width: 370px;
-  margin-top: 15px;
-  margin-left: 15px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .card-content {
   width: 370px;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 .card-title {
   font-weight: 700;

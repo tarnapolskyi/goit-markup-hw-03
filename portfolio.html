@@ -19,20 +19,20 @@
 
 <body>
     <!--Шапка сайта-->
-    <header>
-        <div class="header container">
+    <header class="header">
+        <div class="header-container container">
             <nav class="header-nav">
                 <a href="/" class="logo link">Web<span class="logo-badge">Studio</span></a>
-                <ul class="site-nav list">
-                    <li class="site-nav-list"><a class="site-nav-link link" href="./index.html">Студия</a></li>
-                    <li class="site-nav-list"><a class="site-nav-link link current" href="/">Портфолио</a></li>
-                    <li class="site-nav-list"><a class="site-nav-link link" href="">Контакты</a></li>
+                <ul class="site-nav">
+                    <li class="site-nav-item"><a class="site-nav-link" href="./index.html">Студия</a></li>
+                    <li class="site-nav-item"><a class="site-nav-link  current" href="/">Портфолио</a></li>
+                    <li class="site-nav-item"><a class="site-nav-link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="contacts list">
-                <li class="contacts-list"><a class="contacts-link link"
+            <ul class="contacts">
+                <li class="contacts-item"><a class="contacts-link"
                         href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="contacts-list"><a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="contacts-item"><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
@@ -41,14 +41,14 @@
         <section class="section">
             <div class="container">
                 <h1 hidden>Портфолио</h1>
-                <ul class="sorting list">
-                    <li class="sorting-list"><button class="sorting-button" type="button">Все</button></li>
-                    <li class="sorting-list"><button class="sorting-button" type="button">Веб-сайты</button></li>
-                    <li class="sorting-list"><button class="sorting-button" type="button">Приложения</button></li>
-                    <li class="sorting-list"><button class="sorting-button" type="button">Дизайн</button></li>
-                    <li class="sorting-list"><button class="sorting-button" type="button">Маркетинг</button></li>
+                <ul class="sorting">
+                    <li class="sorting-item"><button class="sorting-button" type="button">Все</button></li>
+                    <li class="sorting-item"><button class="sorting-button" type="button">Веб-сайты</button></li>
+                    <li class="sorting-item"><button class="sorting-button" type="button">Приложения</button></li>
+                    <li class="sorting-item"><button class="sorting-button" type="button">Дизайн</button></li>
+                    <li class="sorting-item"><button class="sorting-button" type="button">Маркетинг</button></li>
                 </ul>
-                <ul class="card list">
+                <ul class="card">
                     <li class="card-item">
                         <img src="./images/portfolio/1.jpg" alt="Ноутбук" width="370" />
                         <div class="card-content">
@@ -118,24 +118,22 @@
         </section>
     </main>
     <!-- Футер -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div class="footer-contacts">
-                <a href="/" class="logo link">Web<span class="logo-badge-reverse">Studio</span></a>
-                <address>
-                    <ul class="address list">
-                        <li class="address-list">
-                            <a class="address-link link" href="https://goo.gl/maps/jtnfKbwxNLxgWtV19" target="_blank"
-                                rel="noopener noreferrer">г. Киев,
-                                пр-т Леси Украинки, 26</a>
-                        </li>
-                        <li class="address-list"><a class="feedback link"
-                                href="mailto:info@example.com">info@example.com</a></li>
-                        <li class="address-list"><a class="feedback link" href="tel:+380991111111">+38 099 111 11 11</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
+            <a href="/" class="logo">Web<span class="logo-badge-reverse">Studio</span></a>
+            <address class="address">
+                <ul class="address-list">
+                    <li class="address-item">
+                        <a class="address-link" href="https://goo.gl/maps/jtnfKbwxNLxgWtV19" target="_blank"
+                            rel="noopener noreferrer">г. Киев,
+                            пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="address-item"><a class="feedback" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="address-item"><a class="feedback" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
         </div>
     </footer>
 </body>
